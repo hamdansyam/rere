@@ -1,0 +1,26 @@
+<html>
+    <head><h1>Radiomac</h1></head>
+    <body>
+    <script>
+        function hasilgender(form)
+        {
+            var ket="";
+            if (form.wanita.checked==true)
+            {ket="wanita";}
+        
+        else
+        {
+            ket="pria";
+        }
+        document.ff.kotakhasil.value=ket;
+    }
+    </script>
+    
+        <form name="ff">
+           <input type="radio" value="wanita" name="wanita">wanita
+          <br> <input type="button" value="confirm" onclick="hasilgender(this.form)">
+          <input type="text" name="kotakhasil">
+        </form>
+        
+    </body>
+</html>
